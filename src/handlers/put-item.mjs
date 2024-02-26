@@ -37,6 +37,7 @@ export const putItemHandler = async (event) => {
         TableName : tableName,
         Item: { id : id, name: name , disponible: disponible, anoPublicacion: anoPublicacion,
             autor: autor, editorial: editorial , nombreLibro: nombreLibro}
+        
     };
 
     try {
