@@ -29,6 +29,8 @@ export const putItemHandler = async (event) => {
     const autor = body.autor;
     const editorial = body.editorial;
     const nombreLibro = body.nombreLibro;
+
+    console.log("DEBUG", body.nombreLibro)
     // Creates a new item, or replaces an old item with a new item
     // https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB/DocumentClient.html#put-property
     var params = {
